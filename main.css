@@ -7,6 +7,7 @@ body {
     font: sans-serif; 
 }
 
+
 nav {
     margin-top: 35px;
     display: flex;
@@ -18,14 +19,17 @@ nav {
     border: 1px black solid;
 }
 
+
 .menu {
     list-style: none;
 }
+
 
 .menu li {
     display: inline;
     padding-right: 20px;
 }
+
 
 .hamburger {
     display: none;
@@ -33,25 +37,66 @@ nav {
 
 
 .aboutMe {
-    width: 25%;
-    height: 25%;
+    width: 100%;
+    height: 500px;
+    margin-right: auto;
     border: 1px solid black;
-    position: relative;
-    top: 100px;
 }
+
+
 
 .profile {
     width: 150px;
     height: 150px;
-    position: relative; 
-    left: 1000px;
+    float: right;
+
 }
+
+.pageLink {
+    color: black;
+    text-decoration: none;
+}
+
 
 .projectPreview {
     width: 50%;
     height: 35%;
     border: 1px solid black;
-    position: relative;
-    top: 400px;
     margin: auto auto;
+    margin-top: 30px;
 }
+
+
+
+@media screen and (max-width: 500px) {
+    .aboutMe {
+        width: 100%;
+        height: 400px;
+        margin-right: auto;
+        border: 1px solid black;
+    }
+
+
+    .menu {
+        display: none;
+    }
+
+
+    .hamburger {
+        display: inline;
+    }
+    
+    
+    .profile {
+        width: 150px;
+        height: 150px;
+        float: right;
+    }
+
+}
+
+
+
+
+
+
