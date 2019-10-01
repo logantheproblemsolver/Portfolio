@@ -57,9 +57,12 @@ nav {
 }
 
 
+.container {
+    width: 50%;
+}
 
 .paragraph {
-    width: 40%;
+    width: 100%;
     margin-left: 35px;
 }
 
