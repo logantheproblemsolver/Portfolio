@@ -9,7 +9,7 @@ body {
 
 
 nav {
-    margin-top: 35px;
+    margin-top: 0px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -17,17 +17,27 @@ nav {
     height: 35px;
     background-color: lightgray;
     border: 1px black solid;
+    margin-bottom: 35px;
+}
+
+.statement {
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 0; 
+    font-family: 'Proza Libre', sans-serif;
 }
 
 
 .menu {
     list-style: none;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
 .menu li {
     display: inline;
     padding-right: 20px;
+
 }
 
 
@@ -39,17 +49,26 @@ nav {
 .aboutMe {
     width: 100%;
     height: 500px;
-    margin-right: auto;
-    border: 1px solid black;
+    font-family: sans-serif;
+    text-align: left;
+    line-height: 22px;
+    font-size: 18px;
+    margin-bottom: 50px;
 }
 
 
 
+.paragraph {
+    width: 40%;
+    margin-left: 35px;
+}
+
+
 .profile {
-    width: 150px;
+    width: 175px;
     height: 150px;
     float: right;
-
+    margin-right: 35px;
 }
 
 .pageLink {
@@ -66,6 +85,41 @@ nav {
     margin-top: 30px;
 }
 
+.previewPicture {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+#theOffice {
+    margin: auto auto;
+    width: 50%;
+    height: 500px;    
+    text-align: center;
+}
+
+.portfolio {
+    width: 100%;
+    height: 75%;
+}
+
+
+.projectLinks {
+    display: block;
+}
+
+
+#contact {
+    margin: auto auto;
+    text-align: center;
+    font-size: 24px;
+}
+
+.logo {
+    height: 22px;
+    width: 24px;
+}
 
 
 @media screen and (max-width: 500px) {
