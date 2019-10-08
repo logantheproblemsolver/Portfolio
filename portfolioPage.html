@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale+1"">
+        <meta name="viewport" content="width=device-width">
         <title>Logan Ellis' Porfolio</title>
         <link href="main.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Proza+Libre&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     </head>
     <body>
+        <script src="index.js"></script>
         <h1 class="statement">Stop. You just found your next hire.</h1>
         <nav>
             <div class="hamburger">&#9776;</div>
@@ -19,8 +21,31 @@
             </ul>
         </nav>
         <section id="theOffice">
-            <img class="portfolio" src="The-Office-Quiz-Title.PNG" alt="Title Screen of The Office Quiz">
+            <div class="theOfficeCarousel">
+                <div class="slideImage fade">
+                    <div class="numberText">1 / 3</div>
+                    <img class="portfolio" src="The-Office-Quiz-Title.PNG" alt="Title Screen of The Office Quiz">
+                </div>
+                <div class="slideImage fade">
+                    <div class="numberText">2 / 3</div>
+                    <img class="portfolio" src="The-Office-Quiz-Question.PNG" alt="Question Screen of The Office Quiz">
+                </div>
+                <div class="slideImage fade">
+                    <div class="numberText">3 / 3</div>
+                    <img class="portfolio" src="The-Office-Quiz-Wrong-Answer.PNG" alt="Wrong Answer Screen of The Office Quiz">
+                </div>
+                <a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onClick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onClick="currentSlide(1)"></span>
+                <span class="dot" onClick="currentSlide(2)"></span>
+                <span class="dot" onClick="currentSlide(3)"></span>
+            </div>
+            <p>This quiz tests your knowledge of the famous sitcom "The Office" using HTML, CSS, JavaScript, and jQuery</p>
             <a class="projectLinks" href="https://logantheproblemsolver.github.io/The-Office-Quiz/" target="_blank">Give the quiz a try!</a>
             <a class="projectLinks" href="https://github.com/logantheproblemsolver/The-Office-Quiz" target="_blank">Here's the code for this project!</a>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src='index.js'></script>
     </body>
 </html>

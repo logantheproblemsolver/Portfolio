@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale+1"">
+        <meta name="viewport" content="width=device-width">
         <title>Logan Ellis' Porfolio</title>
         <link href="main.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
@@ -11,7 +11,13 @@
     <body>
         <h1 class="statement">Stop. You just found your next hire.</h1>
         <nav>
-            <div class="hamburger">&#9776;</div>
+            <div class="hamburger" id="hamburger">&#9776;
+                <ul class="hamburgerMenu" id="hamburgerMenu">
+                    <li><a href="index.html" class="pageLink">About Me</a></li>
+                    <li><a href="portfolioPage.html" class="pageLink">Projects</a></li>
+                    <li><a href="contactMe.html" class="pageLink">Contact Me</a></li>
+                </ul>
+            </div>
             <ul class="menu">
                 <li><a href="index.html" class="pageLink">About Me</a></li>
                 <li><a href="portfolioPage.html" class="pageLink">Projects</a></li>
@@ -26,8 +32,7 @@
             </div>
                 <img src="ProfilePicture.jpg" class="profile" alt="profile picture"/>
         </section>
-        <section class="projectPreview">
-            <a href="portfolioPage.html"><img class="previewPicture" src="The-Office-Quiz-Title.PNG" alt="The Office Quiz"/></a>
-        </section>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src='index.js'></script>
     </body>
 </html>

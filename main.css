@@ -5,7 +5,7 @@
 
 
 body {
-    font: sans-serif; 
+    font-family: sans-serif; 
     color: #AEFFE7;
 }
 
@@ -58,7 +58,6 @@ a {
 .hamburger {
     display: none;
     background-color: #C9ADB1;
-
 }
 
 
@@ -67,7 +66,7 @@ a {
     height: 500px;
     font-family: sans-serif;
     text-align: left;
-    line-height: 22px;
+    line-height: 27px;
     font-size: 18px;
     margin-bottom: 50px;
 }
@@ -102,6 +101,7 @@ a {
     height: 35%;
     margin: auto auto;
     margin-top: 30px;
+    text-align: center;     
 }
 
 .previewPicture {
@@ -142,31 +142,59 @@ a {
 }
 
 
+
+@media screen and (max-width: 1150px) {
+    .projectPreview {
+        float: right;
+        width: 47%
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .menu {
+        display: none;
+    }
+
+    .hamburgerMenu {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline;
+        margin-right: 15px;
+        color:black;
+    }
+    
+    .hamburger:hover {
+        cursor: pointer;
+    }
+
+}
+
 @media screen and (max-width: 500px) {
     .aboutMe {
         width: 100%;
         height: 400px;
         margin-right: auto;
-        border: 1px solid black;
     }
 
+    .container {
+        width: 40%;
 
-    .menu {
-        display: none;
+        display: inline-block;  
     }
 
-
-    .hamburger {
-        display: inline;
-    }
-    
     
     .profile {
-        width: 150px;
-        height: 150px;
+        width: 75px;
+        height: 75px;
         float: right;
     }
 
+    .projectPreview {
+        flex-shrink: .5;
+    }
 }
 
 
