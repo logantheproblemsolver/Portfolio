@@ -37,6 +37,7 @@ a {
 
 
 .menu {
+    margin-right: 85px;
     list-style: none;
     font-family: 'Open Sans', sans-serif;
     background-color: #C9ADB1;
@@ -44,6 +45,7 @@ a {
 
 
 .menu li {
+    margin-right: 15px;
     display: inline;
     padding-right: 20px;
     background-color: #C9ADB1;
@@ -60,6 +62,18 @@ a {
     background-color: #C9ADB1;
 }
 
+.hamburgerMenu {
+    background-color: #C9ADB1;
+}
+
+.hamburgerMenu li, .hamburgerMenu li a {
+    background-color: #C9ADB1;
+}
+
+.menuShow {
+    margin-top: 75px;
+    justify-content: flex-end;
+}
 
 .aboutMe {
     width: 100%;
@@ -74,7 +88,8 @@ a {
 
 .container {
     width: 40%;
-    display: inline-block;  
+    display: inline-block; 
+    margin-left: 110px; 
 }
 
 .paragraph {
@@ -84,10 +99,11 @@ a {
 
 
 .profile {
-    width: 175px;
-    height: 150px;
+    width: 300px;
+    height: 400px;
     float: right;
-    margin-right: 50px;
+    margin-right: 250px;
+    margin-top: 35px;
 }
 
 .pageLink {
@@ -180,6 +196,19 @@ a {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .profile {
+        width: 200px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .profile {
+        width: 150px;
+        height: 250px;
+    }
+}
 
 @media screen and (max-width: 700px) {
     .menu {
@@ -200,6 +229,11 @@ a {
         cursor: pointer;
     }
 
+
+.profile {
+    width: 100px;
+    height: 200px;
+    }
 }
 
 @media screen and (max-width: 500px) {

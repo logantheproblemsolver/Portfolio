@@ -1,11 +1,11 @@
 
 
 $(document).ready(function menuClick() {
-    $('#hamburger').on('click', '#hamburgerMenu', function(event) {
-        alert('hey!');
-
+    $('#hamburger').on('click', function(event) {
         event.preventDefault();
-        $('.hamburgerMenu').removeClass('hide');
+        $('.hamburgerMenu').toggleClass('hide');
+        $('#hamburger').toggleClass('hide');
+        $('#hamburger').toggleClass('menuShow');
     });
 });
 
