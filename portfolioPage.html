@@ -11,19 +11,22 @@
     </head>
     <body>
         <h1 class="statement">Stop. You just found your next hire.</h1>
-        <nav>
-            <div class="hamburger" id="hamburger">&#9776;</div>
-            <ul class="hide menu">
-                <li><a href="index.html" class="pageLink">About Me</a></li>
-                <li><a href="portfolioPage.html" class="pageLink">Projects</a></li>
-                <li><a href="contactMe.html" class="pageLink">Contact Me</a></li>
-            </ul>
-        </nav>
+        <header class="header">
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu">
+                    <li><a href="index.html" class="pageLink">About Me</a></li>
+                    <li><a href="portfolioPage.html" class="pageLink">Projects</a></li>
+                    <li><a href="contactMe.html" class="pageLink">Contact Me</a></li>
+                </ul>
+            </header>
         <section id="theOffice">
+            <h2>The Office Quiz Project</h2>
             <img class="portfolio" src="The-Office-Quiz-Title.PNG" alt="Title Screen of The Office Quiz">
-            <p>This quiz tests your knowledge of the famous sitcom "The Office" using HTML, CSS, JavaScript, and jQuery</p>
-            <a class="projectLinks" href="https://logantheproblemsolver.github.io/The-Office-Quiz/" target="_blank">Give the quiz a try!</a><br>
-            <a class="projectLinks" href="https://github.com/logantheproblemsolver/The-Office-Quiz" target="_blank">Here's the code for this project!</a>
+            <p>This is a quiz application that will keep track of which question you are on, how many you got right, and at the end if you feel like you can do better than you can retry the quiz!</p><br>
+            <p>The quiz application was built using: HTML, CSS, JavaScript, and jQuery</p>
+            <p id="tryQuiz"><img class="portfolioLogo" src="computerLogo.png" alt="GitHub Logo"/><a class="projectLinks" href="https://logantheproblemsolver.github.io/The-Office-Quiz/" target="_blank">Give the quiz a try!</a></p><br>
+            <p id="viewCode"><img class="portfolioLogo" src="Github-Logo.png" alt="GitHub Logo"/><a class="projectLinks" href="https://github.com/logantheproblemsolver/The-Office-Quiz" target="_blank">Here's the code for this project!</a></p>
         </section>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src='index.js'></script>
