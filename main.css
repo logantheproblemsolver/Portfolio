@@ -3,7 +3,6 @@
     background-color: #303741;
 }
 
-@media screen and (min-width: 315px) {
     body {
         font-family: sans-seriff;
         color: #AEFFE7;
@@ -158,6 +157,9 @@
         font-size: 18px;
     }
 
+    h2 {
+        text-align: center;
+    }
 
     .profile {
         width: 30%;
@@ -222,7 +224,7 @@
         width: 24px;
     }
 
-}
+
 
 @media screen and (min-width: 48em) {
 /* hamburger menu start */
@@ -251,7 +253,6 @@
     header li {
         display: inline;
         margin-right: 15px;
-
     }
 
     header ul {
