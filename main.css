@@ -88,6 +88,9 @@
     
     /* menu icon */
     
+    .navicon {
+        color: transparent;
+    }
     .header .menu-icon {
         cursor: pointer;
         float: right;
